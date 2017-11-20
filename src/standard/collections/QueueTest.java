@@ -56,6 +56,20 @@ class QueueTest {
 		
 		System.out.println("java.util.Queue.remove() -> " + parentQueue.pop() + " | queue: " + parentQueue);
 		//java.util.Queue.remove() -> Fulvia | queue: [Marco]
+		
+		ArrayDeque<String> sonQueue = new ArrayDeque<String>();
+		
+		sonQueue.push("Emma");
+		System.out.println("java.util.ArrayDeque.push(String) -> void | queue: " + sonQueue);
+		//java.util.ArrayDeque.push(String) -> void | queue: [Emma]
+		
+		System.out.println("java.util.ArrayDeque.peek() -> " + sonQueue.peek() + " | queue: " + sonQueue);
+		//java.util.ArrayDeque.peek() -> Emma | queue: [Emma]
+		
+		sonQueue.push("Benni");
+		System.out.println("java.util.ArrayDeque.push(String) -> void | queue: " + sonQueue);
+		//java.util.ArrayDeque.push(String) -> void | queue: [Benni, Emma]
+
 
 	}
 }
